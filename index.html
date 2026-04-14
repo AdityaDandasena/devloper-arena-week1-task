@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | HTML5 Structure</title>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <!-- Internal Navigation Links -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a web developer focused on creating semantic and accessible websites.</p>
+            <!-- Image with descriptive alt text -->
+            <img src="image/download.jpg" alt="A professional headshot of a web developer in an office setting">
+        </section>
+
+        <hr>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5 Semantic Tagging</li>
+                <li>CSS3 Flexbox and Grid</li>
+                <li>Accessible Form Design</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section with Working Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Fill out the form below to get in touch!</p>
+            
+            <!-- Working Form (Using Formspree as an example for backend processing) -->
+            <form action="https://formspree.io" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="How can I help you?"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
