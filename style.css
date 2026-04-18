@@ -1,0 +1,137 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles (Element Selector) */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation (Descendant Selector) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Link Styling + Hover Effect (Pseudo-class selector) */
+nav ul li a {
+    text-decoration: none;
+    color: #e0e7ff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+/* Section Styling (ID Selector example used below too) */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* About Section Image */
+#about img {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Skills List */
+#skills ul {
+    display: grid; /* CSS Grid used */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 0;
+}
+
+#skills li {
+    background: #dbeafe;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+/* Form Styling */
+form {
+    display: flex; /* Flexbox used */
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling + Hover */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design (Media Query) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #about img {
+        width: 100%;
+    }
+}
